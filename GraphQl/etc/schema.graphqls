@@ -1,0 +1,7 @@
+type Query {
+    isLoggedIn: Boolean
+    @resolver(class:"Terenbro\\GraphQl\\Model\\Resolver\\IsLoggedIn")
+}
+type StoreConfig {
+    catalog_review_active : String  @doc(description: "Check Catalog Review enabled or not")
+}
